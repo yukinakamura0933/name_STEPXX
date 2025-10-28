@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>世界一甘いお店 - お問い合わせ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="main-header">
+    <h1>世界一甘いお店</h1>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="#">トップ</a></li>
+          <li><a href="#">新着情報</a></li>
+          <li><a href="#">おすすめのスイーツ</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="form-panel">
+      <h2>お問い合わせフォーム</h2>
+      <form>
+        <div class="input-group">
+          <label for="name">お名前</label>
+          <input type="text" id="name" name="name">
+        </div>
+
+        <div class="input-group">
+          <label for="store">お近くのお店</label>
+          <select id="store" name="store">
+            <option value="hokkaido">北海道・東北</option>
+            <option value="kanto">関東</option>
+            <option value="tyuubu">中部</option>
+            <option value="kansai">関西</option>
+            <option value="tyuugoku">中国・四国</option>
+            <option value="kyushu">九州・沖縄</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="phone">電話番号</label>
+          <input type="text" id="phone" name="phone">
+        </div>
+
+        <div class="input-group">
+          <label for="email">メールアドレス</label>
+          <input type="email" id="email" name="email">
+        </div>
+
+        <div class="input-group">
+          <label>お問い合わせ種類</label>
+          <div class="radio-group">
+            <label><input type="radio" name="type" value="product"> 商品について</label>
+            <label><input type="radio" name="type" value="staff"> 従業員について</label>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="message">お問い合わせ内容</label>
+          <textarea id="message" name="message" rows="5" placeholder="情報を入力してください"></textarea>
+        </div>
+
+        <button type="submit">送信</button>
+      </form>
+    </main>
+  </div>
+</body>
+</html>
