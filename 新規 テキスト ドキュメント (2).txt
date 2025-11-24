@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Yu Gothic", sans-serif;
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ヘッダー */
+.main-header {
+  background-color: #f1f373;
+  padding: 30px 0;
+  text-align: center;
+  border-bottom: 2px solid #f1ecb9;
+  margin: 0;
+}
+
+.main-header h2 {
+  margin: 0;
+  font-size: 36px;
+  color: #000000;
+  font-weight: bold;
+}
+
+/* コンテナ */
+.container {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  margin: 0;
+  background-color: #fff;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #9dfac7dc;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.sidebar li {
+  margin-bottom: 15px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #2824f0e8;
+  font-weight: bold;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* フォームパネル（画面全体に広がらないよう制限） */
+.form-panel {
+  flex: none;               /* ← 全画面に広がらないようにする */
+  background-color: #f0dbbc;
+  padding: 30px;
+  box-sizing: border-box;
+  width: 800px;             /* ← 固定幅 */
+  max-width: 90%;           /* ← 画面幅が狭いときは縮む */
+  margin: 40px auto;        /* ← 中央寄せ */
+  border: 4px double #000;  /* ← 枠線を付ける */
+}
+
+.form-panel h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #d6336c;
+}
+
+/* テーブルスタイル */
+.contact-table {
+  width: 100%;
+  margin: 0 auto 20px auto;
+  border-collapse: collapse;
+}
+
+.contact-table th,
+.contact-table td {
+  border: 4px double #000000;
+  padding: 12px 15px;       /* ← 内側余白を統一 */
+  text-align: left;
+  vertical-align: middle;   /* ← 高さを揃える */
+}
+
+.contact-table th label,
+.contact-table td label {
+  display: inline;
+  background: none;
+  padding: 0;
+  font-weight: bold;
+  border-radius: 0;
+}
+
+.contact-table th {
+  width: 200px;
+}
+
+/* 入力欄 */
+input[type="text"], select, textarea {
+  font-size: 14px;
+  padding: 6px 8px;         /* ← 入力欄も均一に */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* ラジオボタン横並び */
+.radio-row {
+  display: flex;
+  gap: 20px;
+  align-items: center;      /* ← 縦方向を中央揃え */
+}
+
+.radio-row label {
+  display: inline;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* フォーム全体を右下寄せに */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* 送信ボタン */
+button {
+  width: auto;
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #d3d3d3;
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #b0b0b0;
+}
+
