@@ -6,75 +6,77 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="main-header">
-    <h2>世界一甘いお店</h2>
-  </header>
+  <div class="wrapper">
+    <header class="main-header">
+      <h2>世界一甘いお店</h2>
+    </header>
 
-  <div class="container">
-    <aside class="sidebar">
-      <nav>
-        <ul>
-          <li><a href="#">トップ</a></li>
-          <li><a href="#">新着情報</a></li>
-          <li><a href="#">おすすめのスイーツ</a></li>
-          <li><a href="#">お問い合わせ</a></li>
-        </ul>
-      </nav>
-    </aside>
+    <div class="container">
+      <aside class="sidebar">
+        <nav>
+          <ul>
+            <li><a href="#">トップ</a></li>
+            <li><a href="#">新着情報</a></li>
+            <li><a href="#">おすすめのスイーツ</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </aside>
 
-    <main class="form-panel">
-      <form>
-        <table class="contact-table">
-          <tbody>
-            <tr>
-              <th><label for="name">お名前</label></th>
-              <td><input type="text" id="name" name="name" size="40"></td>
-            </tr>
-            <tr>
-              <th><label for="store">お近くのお店</label></th>
-              <td>
-                <select id="store" name="store">
-                  <option value="hokkaido">北海道・東北</option>
-                  <option value="kanto">関東</option>
-                  <option value="tyuubu">中部</option>
-                  <option value="kansai">関西</option>
-                  <option value="tyuugoku">中国・四国</option>
-                  <option value="kyushu">九州・沖縄</option>
-                </select>
-              </td>
-            </tr>
-            <tr>
-              <th><label for="phone">電話番号</label></th>
-              <td><input type="text" id="phone" name="phone" size="40"></td>
-            </tr>
-            <tr>
-              <th><label for="email">メールアドレス</label></th>
-              <td><input type="text" id="email" name="email" size="40"></td>
-            </tr>
-            <tr>
-              <th><label for="type">お問い合わせ種類</label></th>
-              <td class="radio-row">
-                <label><input type="radio" name="type" value="product"> 商品について</label>
-                <label><input type="radio" name="type" value="staff"> 従業員について</label>
-              </td>
-            </tr>
-            <tr>
-              <th><label for="message">お問い合わせ内容</label></th>
-              <td>
-                <textarea id="message" name="message" cols="30" rows="5" placeholder="詳細を入力してください"></textarea>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <main class="form-panel">
+        <form>
+          <table class="contact-table">
+            <tbody>
+              <tr>
+                <th><label for="name">お名前</label></th>
+                <td><input type="text" id="name" name="name" size="40"></td>
+              </tr>
+              <tr>
+                <th><label for="store">お近くのお店</label></th>
+                <td>
+                  <select id="store" name="store">
+                    <option value="hokkaido">北海道・東北</option>
+                    <option value="kanto">関東</option>
+                    <option value="tyuubu">中部</option>
+                    <option value="kansai">関西</option>
+                    <option value="tyuugoku">中国・四国</option>
+                    <option value="kyushu">九州・沖縄</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th><label for="phone">電話番号</label></th>
+                <td><input type="text" id="phone" name="phone" size="40"></td>
+              </tr>
+              <tr>
+                <th><label for="email">メールアドレス</label></th>
+                <td><input type="text" id="email" name="email" size="40"></td>
+              </tr>
+              <tr>
+                <th><label for="type">お問い合わせ種類</label></th>
+                <td class="radio-row">
+                  <label><input type="radio" name="type" value="product"> 商品について</label>
+                  <label><input type="radio" name="type" value="staff"> 従業員について</label>
+                </td>
+              </tr>
+              <tr>
+                <th><label for="message">お問い合わせ内容</label></th>
+                <td>
+                  <textarea id="message" name="message" cols="30" rows="5" placeholder="詳細を入力してください"></textarea>
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
-        <div class="submit-area">
-          <button type="submit">送信</button>
-        </div>
-      </form>
-    </main>
+          <div class="submit-area">
+            <button type="submit">送信</button>
+          </div>
+        </form>
+      </main>
+    </div>
+
+    <footer class="page-footer">
+    </footer>
   </div>
-
-<footer class="page-footer"></footer>
-
 </body>
 </html>
